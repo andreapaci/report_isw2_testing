@@ -1,0 +1,11 @@
+org.apache.bookkeeper.client.BookKeeperAdmin
+org.apache.bookkeeper.bookie.storage.ldb.WriteCache
+org.apache.syncope.core.provisioning.api.utils.RealmUtils
+org.apache.syncope.core.spring.security.DefaultPasswordGenerator
+
+
+
+
+
+
+
