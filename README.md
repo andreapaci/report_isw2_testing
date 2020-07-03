@@ -12,4 +12,15 @@ Le classi test di Sycncope sono presenti nei seguenti link:
 - DefaultPasswordGenerator: https://github.com/andreapaci/syncope/tree/master/core/spring/src/test/java/org/apache/syncope/core/spring/security
 
 
+Per compilare ed eseguire i test sviluppati è sufficiente lanciare il comando:
+- BooKKeeper:
+     - PIT: mvn -DwithHistory org.pitest:pitest-maven:mutationCoverage surefire:test -Ppit
+     - JaCoCo: mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent verify
+
+- Syncope
+     - PIT: mvn -DwithHistory org.pitest:pitest-maven:mutationCoverage surefire:test -Dianal.skip=true -Drat.skip=true -Dcheckstyle.skip=true
+     - JaCoCo: mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent verify -Dianal.skip=true -Drat.skip=true -Dcheckstyle.skip=true
+
+
+
 Andrea Paci
